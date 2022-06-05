@@ -1,0 +1,9 @@
+year = int(input("Which year do you want to check? "))
+year_remainder1 = year % 4 # true if remainder is 0
+year_remainder2 = year % 100 # false if year_remainder_2 is 0
+year_remainder3 = year % 400 # true if year_remainder_3 is 0
+leap_year = year_remainder1 + year_remainder2 + year_remainder3
+if year_remainder1 == 0 and year_remainder2 == 0 and year_remainder3 == 0:
+    print("Leap year.")
+else:
+    print("Not leap year.")
